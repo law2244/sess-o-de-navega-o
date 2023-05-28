@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Heebo&family=Lato:wght@400;900&family=Manrope:wght@500;700&family=Overpass:wght@400;700&family=Roboto:wght@100;700&family=Space+Mono:wght@700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Epilogue;
+    background-color: hsl(0, 0%, 98%);
+    overflow: hidden;
+}
+header > nav{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 2rem
+}
+nav a,
+nav > .navPt1 > ul > li{
+    color: hsl(0, 0%, 41%);
+    text-decoration: none
+}
+.navPt1 ul{
+    display: flex;
+    list-style: none
+  
+}
+.navPt1 li img{
+    margin-right: 2rem
+}
+.navPt1 li{
+    margin: 0 10px ;
+    cursor: pointer
+}
+[href="ss"]{
+    margin-left: 30px
+}
+.navPt2{
+    margin-right: 4rem
+}
+.navPt2 a:first-of-type{
+    padding-right: 30px
+}
+.navPt2 a:nth-child(2){
+    border: 2px solid hsl(0, 0%, 41%);
+    padding: 15px;
+    border-radius: 15px
+}
+main{
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.titleDescripition h1{
+    font-size: 5rem;
+    color: hsl(0, 0%, 8%)
+}
+.titleDescripition p{
+    color:  hsl(0, 0%, 41%);
+    font-size: 1.2rem;
+    line-height: 32px;
+    margin-bottom: 4rem
+} 
+.titleDescripition a{
+    color: #fff;
+    text-decoration: none;
+    background-color:hsl(0, 0%, 8%);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 20px
+}
+.titleDescripition a:hover{
+    background: transparent ;
+    color: hsl(0, 0%, 8%);
+    border: 2px solid hsl(0, 0%, 8%);
+}
+.imgs_praticanores{
+    display: flex;
+    margin-top: 6rem
+}
+.imgs_praticanores img{
+        margin-right: 3rem;
+        object-fit: contain;
+}
+.divImg img{
+    width: 40vw;
+    height: 70vh;
+    object-fit: contain
+}
+
+/* class events */
+
+
+.menuLInks{  
+  position: absolute;
+  margin-top: 50px ;  
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px 1px #c3c3c3;
+  background-color: #fff;
+  left: 6rem;
+}
+.menuLInks div{
+    display: flex;
+    align-items: center;
+    padding: 5px
+
+}
+.displaynone,
+.companyNone{
+    display: none
+}
+.jsClass{
+    display: block;
+}
+
+.abacompany{
+    display: flex;
+    flex-direction: column;
+    position: absolute;;
+    top: 7rem;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px 1px #c3c3c3;
+}
+.abacompany a{
+    padding: 5px
+}
+
+[src="assets/images/icon-menu.svg"]{
+    position: absolute;
+    display: none;
+
+}
+.menuMobile{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0 2.5rem;
+    display: none
+}
+.menuMobile a ,
+.menuMobile span{
+    display: block;
+}
+.imgFechar{
+    display: flex;
+    justify-content: flex-end
+}
+.imgFechar img{
+    padding: 2rem 0
+}
+.menuMobile,
+.menuMobile a {
+    color: hsl(0, 0%, 41%);
+    text-decoration: none
+}
+.eventClickMenuMoba,
+.eventClickMenuMoba2{
+    margin-top: 20px
+}
+.menuMobile span,
+.menuMobile > a{
+    padding-bottom: 30px 
+}
+.loginRegister{
+    display: flex;
+    flex-direction: column
+}
+
+
+.eventClickMenuMoba2{
+    display: flex;
+    flex-direction: column
+}
+.eventClickMenuMobaNone2,
+.eventClickMenuMobaNone{
+    display: none;
+}
+.eventClickMenuMoba2 a{
+    margin-bottom: 20px
+}
+.loginRegister{
+    margin-top: 1.7rem
+}
+.loginRegister a{
+    padding-bottom: 20px;
+    text-align: center;
+}
+.loginRegister a:nth-child(2){
+    border: 2px solid hsl(0, 0%, 41%);
+    padding: 10px 30px;
+    border-radius: 15px
+}
+
+@media (min-width: 100px) and (max-width: 900px){
+    body{
+        overflow: visible;
+    }
+    main{
+        flex-direction: column;
+     
+    }
+    .divImg img{
+       position: relative;
+       top: 10rem
+    }
+    .divImg img{
+        width: 80vw
+    }
+}
+
+@media (min-width: 100px) and  (max-width: 890px) {
+    [src="assets/images/icon-menu.svg"]{
+        display: block;
+    
+    }
+    .navPt1 > ul > li > img{
+        display: block;
+    }
+    .navPt2 a , 
+    .eventJs , .eventJS2 , 
+    .navPt1 ul > li > a{
+        display: none;
+    }
+
+}
+ @media (min-width: 100px) and (max-width: 800px){
+    .divImg{
+        display: flex;
+        justify-content: center
+    }
+   
+ }  
+ @media (min-width: 100px) and (max-width: 580px){
+  
+    
+    .imgs_praticanores img{
+        margin-right: 1rem
+    }
+ }
